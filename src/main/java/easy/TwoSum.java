@@ -1,21 +1,21 @@
-package easy.array;
+package easy;
 
 import java.util.HashMap;
 import java.util.Map;
 
+//https://leetcode.com/problems/two-sum/
 public class TwoSum {
 
     int[] indices(int[] nums, int target){
 
         Map<Integer, Integer> indices = new HashMap<>();
 
-        int first, second;
+        int num;
         for(int index=0; index < nums.length; index++){
-            first = nums[index];
-            second = target - first;
-            if(indices.containsKey(second))
-                return new int[]{indices.get(second), index};
-            indices.put(first,index);
+            num = target - nums[index];
+            if(indices.containsKey(num))
+                return new int[]{indices.get(num), index};
+            indices.put(nums[index],index);
         }
 
         return new int[]{};

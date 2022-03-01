@@ -1,5 +1,6 @@
-package medium.integer;
+package medium;
 
+import medium.ReverseInteger;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertAll;

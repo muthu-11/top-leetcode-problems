@@ -1,4 +1,4 @@
-package medium.integer;
+package medium;
 
 //https://leetcode.com/problems/reverse-integer/
 public class ReverseInteger {

@@ -1,5 +1,6 @@
-package easy.array;
+package easy;
 
+import easy.TwoSum;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertAll;
