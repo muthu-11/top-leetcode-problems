@@ -19,8 +19,10 @@ class LongestPalindromicSubstringTest {
     @Test
     void getLongestPalindromicSubstring_ShouldReturnLongestPalindrome_GivenString() {
         assertAll(
-                () -> assertEquals("bab", palindrome.longestPalindrome("babad")),
-                () -> assertEquals("bb", palindrome.longestPalindrome("cbbd"))
+                () -> assertEquals("aba", palindrome.longestPalindrome("babad")),
+                () -> assertEquals("bb", palindrome.longestPalindrome("cbbd")),
+                () -> assertEquals("aabbaa", palindrome.longestPalindrome("aaaabbaa")),
+                () -> assertEquals("c", palindrome.longestPalindrome("abc"))
         );
     }
 }
