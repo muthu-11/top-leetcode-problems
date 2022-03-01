@@ -15,7 +15,7 @@ public class TwoSum {
             second = target - first;
             if(indices.containsKey(second))
                 return new int[]{indices.get(second), index};
-            indices.put(nums[index],index);
+            indices.put(first,index);
         }
 
         return new int[]{};
